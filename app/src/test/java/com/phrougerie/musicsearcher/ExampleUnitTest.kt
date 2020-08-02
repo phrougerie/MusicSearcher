@@ -1,4 +1,4 @@
-package com.example.musicsearcher
+package com.phrougerie.musicsearcher
 
 import org.junit.Test
 

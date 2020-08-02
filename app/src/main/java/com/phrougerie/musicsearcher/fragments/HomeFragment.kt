@@ -1,4 +1,4 @@
-package com.example.musicsearcher.fragments
+package com.phrougerie.musicsearcher.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,11 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.musicsearcher.viewModels.HomeViewModel
-import com.example.musicsearcher.R
+import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
+import com.phrougerie.musicsearcher.viewModels.HomeViewModel
+import com.phrougerie.musicsearcher.R
 
 class HomeFragment : Fragment() {
 
+    private  lateinit var  mAuth: FirebaseAuth
     companion object {
         fun newInstance() = HomeFragment()
     }
@@ -26,8 +29,12 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+
+    fun createAccount(){
+
     }
 
 }

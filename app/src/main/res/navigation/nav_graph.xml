@@ -6,7 +6,7 @@
     app:startDestination="@id/connectionFragment">
     <fragment
         android:id="@+id/connectionFragment"
-        android:name="com.example.musicsearcher.fragments.ConnectionFragment"
+        android:name="com.phrougerie.musicsearcher.fragments.ConnectionFragment"
         android:label="connection_fragment"
         tools:layout="@layout/connection_fragment" >
         <action
@@ -18,12 +18,12 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.musicsearcher.fragments.RegisterFragment"
+        android:name="com.phrougerie.musicsearcher.fragments.RegisterFragment"
         android:label="register_fragment"
         tools:layout="@layout/register_fragment" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.musicsearcher.fragments.HomeFragment"
+        android:name="com.phrougerie.musicsearcher.fragments.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" />
 </navigation>

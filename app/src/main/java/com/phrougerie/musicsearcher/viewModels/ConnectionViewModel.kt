@@ -1,4 +1,4 @@
-package com.example.musicsearcher.viewModels
+package com.phrougerie.musicsearcher.viewModels
 
 import androidx.lifecycle.ViewModel
 
